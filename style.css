@@ -1,12 +1,11 @@
 h1 {
     color: red ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
 h2 {
     color: red;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 body {
@@ -63,6 +62,7 @@ textarea {
 nav {
     text-align: center;
     width: 100%;
+    display: inline;
 }
 
 footer {
