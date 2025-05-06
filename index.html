@@ -2,55 +2,64 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="C:\Users\kasse\OneDrive\Desktop\Projet HTML 1\style.css">
+  <link rel="stylesheet" href="style.css">
   <title>PORTFOLIO</title>
 </head>
-<body>
-<div>
-  <h1 id="home">Bienvenue sur mon site</h1><br>
-  </div>
+<body class="body">
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a> 
-    <a href="#work">Work</a> 
-    <a href="#resume">Resume</a> 
-    <a href="#contact">Contact</a>
+  <header class="header">
+    <h1 id="home" class="title">Bienvenue sur mon site</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a> 
+    <a href="#work" class="nav-link">Work</a> 
+    <a href="#resume" class="nav-link">Resume</a> 
+    <a href="#contact" class="nav-link">Contact</a>
   </nav>
 
-  
+  <section id="about" class="section about-section">
+    <h2 class="section-title">About</h2>
+    <p class="description">Je suis étudiant en développement web à GOMYCODE.</p>
+    <aside class="image-container">
+      <img src="data:image/png;base64,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" alt="Photo de profil" class="profile-img">
+    </aside>
+    <p class="question">Pourquoi avoir choisi GOMYCODE pour mes études en développement web ?</p>
+    <div class="video-container">
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/AATsMRbnXhQ" title="🎯 Pourquoi Adem Choisit GOMYCODE pour Allier Tech et Bonne Humeur !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
 
+  <section id="work" class="section work-section">
+    <h2 class="section-title">Work</h2>
+    <p class="description">Ceci est un projet simple demandé par mon école que j’ai réalisé.</p>
+  </section>
 
-  <h2 id="about">About</h2>
-  <p>Je suis étudiant en developpement web à gomycode.</p>
-   <aside><img src="data:image/png;base64,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" alt=""></aside><br>
-   <p>pourquoi avoir choisi gomycode pour mes etudes en developpement web?</p>
-   <iframe width="350" height="200" src="https://www.youtube.com/embed/AATsMRbnXhQ" title="🎯 Pourquoi Adem Choisit GOMYCODE pour Allier Tech et Bonne Humeur !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <h2 id="work">Work</h2>
-  <p>ceci est un projet simple demandé par mon ecole que j’ai réalisé.</p>
+  <section id="resume" class="section resume-section">
+    <h2 class="section-title">Resume</h2>
+    <p class="description">Pour vous renseigner sur mon école <a href="https://gomycode.com" class="external-link">cliquez ici!</a></p>
+  </section>
 
-  <h2 id="resume">Resume</h2>
-  <p> pour vous renseigner sur mon école <a href="https://gomycode.com">cliquez ici!</a> .</p>
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact</h2>
+    <form class="contact-form">
+      <label for="nom">Nom :</label><br>
+      <input type="text" name="nom" id="nom" class="form-input"><br><br>
 
-  <h2 id="contact">Contact</h2>
+      <label for="email">Email :</label><br>
+      <input type="email" name="email" id="email" class="form-input"><br><br>
 
-  <form>
-    <label>Nom :</label><br>
-    <input type="text" name="nom"><br><br>
+      <label for="message">Message :</label><br>
+      <textarea name="message" rows="4" cols="40" class="form-textarea"></textarea><br><br>
 
-    <label>Email :</label><br>
-    <input type="email" name="email"><br><br>
+      <button type="submit" class="submit-btn">Envoyer</button>
+    </form>
+  </section>
 
-    <label>Message :</label><br>
-    <textarea name="message" rows="4" cols="40"></textarea><br><br>
-
-    <button type="submit">Envoyer</button>
-  </form>
-
-  <footer>
-    <p>&copy; 2025 gomycode </p>
+  <footer class="footer">
+    <p>&copy; 2025 GOMYCODE</p>
   </footer>
 
 </body>
 </html>
-
